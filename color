@@ -1,6 +1,6 @@
 #!/bin/bash
 case $TERM in *term*)
-# Color picker, usage: printf ${RED}"Some text"${DEF} | printf ${BLD}${RED}"Some text"${DEF}
+# Color picker, usage: printf ${BLD}${CUR}${RED}${BBLU}"Some text"${DEF}
 #---------------------------+--------------------------------+---------+
 #        Text color         |       Background color         |         |
 #------------+--------------+--------------+-----------------+         |
@@ -25,6 +25,9 @@ INV='\e[7m'   #Inverted                                                |
 COF='\e[?25l' #Cursor Off                                              |
 CON='\e[?25h' #Cursor On                                               |
 #----------------------------------------------------------------------+
-XY   () { printf "\e[${2};${1}H";       } # Text positioning, usage: printf $(XY 10 10)"Some text"
-line () { printf %.s"${1}" $(seq ${2}); } # Line, usage: line - 10 | line word 20 | line 'word1 word2 ' 20
+# Text positioning, usage: printf $(XY 10 10)"Some text"               |
+XY   () { printf "\e[${2};${1}H";       } #                            |
+# Line, usage: line - 10 | line word 20 | line 'word1 word2 ' 20       |
+line () { printf %.s"${1}" $(seq ${2}); } #                            |
+#----------------------------------------------------------------------+
 ;; esac
