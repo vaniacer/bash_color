@@ -14,7 +14,7 @@ MGN='\e[35m'; LMGN='\e[95m'; BMGN='\e[45m'; BLMGN='\e[105m' #| Magenta |
 CYN='\e[36m'; LCYN='\e[96m'; BCYN='\e[46m'; BLCYN='\e[106m' #| Cyan    |
 GRY='\e[37m'; DGRY='\e[90m'; BGRY='\e[47m'; BDGRY='\e[100m' #| Gray    |
 #------------------------------------------------------------+---------+
-#Effects                                                               |
+# Effects                                                              |
 #----------------------------------------------------------------------+
 DEF='\e[0m'   #Default color and effects                               |
 BLD='\e[1m'   #Bold\brighter                                           |
@@ -27,7 +27,8 @@ CON='\e[?25h' #Cursor On                                               |
 #----------------------------------------------------------------------+
 # Text positioning, usage: printf $(XY 10 10)"Some text"               |
 XY   () { printf "\e[${2};${1}H";       } #                            |
-# Line, usage: line - 10 | line word 20 | line 'word1 word2 ' 20       |
+#----------------------------------------------------------------------+
+# Line, usage: line - 10 | line -= 20 | line 'word1 word2 ' 20         |
 line () { printf %.s"${1}" $(seq ${2}); } #                            |
 #----------------------------------------------------------------------+
 ;; esac
