@@ -1,6 +1,6 @@
 #!/bin/bash
 case $TERM in *term*)
-#                      Color picker
+# Color picker, usage: printf ${RED}"Some text"${DEF} | printf ${BLD}${RED}"Some text"${DEF}
 #---------------------------+--------------------------------+---------+
 #        Text color         |       Background color         |         |
 #------------+--------------+--------------+-----------------+         |
