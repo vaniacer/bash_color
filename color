@@ -5,17 +5,16 @@ case $TERM in *term*)
 #---------------------------+--------------------------------+---------+
 #        Text color         |       Background color         |         |
 #------------+--------------+--------------+-----------------+         |
-#    Base    |Lighter\Darker|    Base      |Lighter\Darker   |         |
+#    Base    |   Lighter    |    Base      |   Lighter       |         |
 #------------+--------------+--------------+-----------------+         |
-WHT='\e[97m';                BWHT='\e[107m';                #| White   |
-BLK='\e[30m';                BBLK='\e[40m' ;                #| Black   |
+BLK='\e[30m'; LBLK='\e[90m'; BBLK='\e[40m' ;BLBLK='\e[100m' #| Black   |
 RED='\e[31m'; LRED='\e[91m'; BRED='\e[41m' ;BLRED='\e[101m' #| Red     |
 GRN='\e[32m'; LGRN='\e[92m'; BGRN='\e[42m' ;BLGRN='\e[102m' #| Green   |
 YLW='\e[33m'; LYLW='\e[93m'; BYLW='\e[43m' ;BLYLW='\e[103m' #| Yellow  |
 BLU='\e[34m'; LBLU='\e[94m'; BBLU='\e[44m' ;BLBLU='\e[104m' #| Blue    |
 MGN='\e[35m'; LMGN='\e[95m'; BMGN='\e[45m' ;BLMGN='\e[105m' #| Magenta |
 CYN='\e[36m'; LCYN='\e[96m'; BCYN='\e[46m' ;BLCYN='\e[106m' #| Cyan    |
-GRY='\e[37m'; DGRY='\e[90m'; BGRY='\e[47m' ;BDGRY='\e[100m' #| Gray    |
+GRY='\e[37m'; LGRY='\e[97m'; BGRY='\e[47m' ;BDGRY='\e[107m' #| Gray    |
 #------------------------------------------------------------+---------+
 # Effects                                                              |
 #----------------------------------------------------------------------+
