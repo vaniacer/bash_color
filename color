@@ -1,7 +1,7 @@
 #!/bin/bash
 case $TERM in *term*)
 #--------------------------------------------------------------------+
-#Color picker, usage: printf ${BLD}${CUR}${RED}${BBLU}"Hello!)"${DEF}|
+#Color picker, usage: printf "$BLD$CUR$RED$BBLUHello!)$DEF"          |
 #-------------------------+--------------------------------+---------+
 #       Text color        |       Background color         |         |
 #-----------+-------------+--------------+-----------------+         |
@@ -28,9 +28,9 @@ COF='\e[?25l' #Cursor Off                                            |
 CON='\e[?25h' #Cursor On                                             |
 #--------------------------------------------------------------------+
 # Text positioning, usage: XY 10 10 "Hello World!"                   |
-XY   () { printf "\e[${2};${1}H${3}";   } #                          |
+XY   () { printf "\e[$2;${1}H$3";   } #                              |
 #--------------------------------------------------------------------+
 # Print line, usage: line - 10 | line -= 20 | line "Hello World!" 20 |
-line () { printf %.s"${1}" $(seq ${2}); } #                          |
+line () { printf %.s"$1" $(seq $2); } #                              |
 #--------------------------------------------------------------------+
 ;; esac
