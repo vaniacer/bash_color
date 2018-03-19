@@ -1,7 +1,7 @@
 #!/bin/bash
 case $TERM in *term*)
 #--------------------------------------------------------------------+
-#Color picker, usage: printf "$BLD$CUR$RED$BBLUHello!)$DEF"          |
+#Color picker, usage: printf "$BLD$CUR$RED${BBLU}Hello!)$DEF"        |
 #-------------------------+--------------------------------+---------+
 #       Text color        |       Background color         |         |
 #-----------+-------------+--------------+-----------------+         |
