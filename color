@@ -31,6 +31,6 @@ CON='\e[?25h' #Cursor On                                             |
 XY   () { printf "\e[$2;${1}H$3"; } #                                |
 #--------------------------------------------------------------------+
 # Print line, usage: line - 10 | line -= 20 | line 'Hello World!' 20 |
-line () { printf -v line "%$2s"; printf ${line// /"$1"}; } #         |
+line () { printf -v LINE "%$2s"; printf "${LINE// /$1}"; } #         |
 #--------------------------------------------------------------------+
 ;; esac
