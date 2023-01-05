@@ -29,5 +29,8 @@ XY(){ printf "\e[$2;${1}H$3"; }                                     #|
 # Print line, usage: line - 10 | line -= 20 | line 'Hello World!' 20 |
 line(){ printf -v _L %$2s; printf -- "${_L// /$1}"; }               #|
 # Create sequence like {0..(X-1)}, usage: que 10                     |
-que(){ printf 0; for ((i=1; i<$1; i++)); { printf -- " %s" $i; }; } #|
+que(){ printf -v _N %$1s; _N=(${_N// / 1}); printf "${!_N[*]}"; }   #|
 #--------------------------------------------------------------------+
+# loops are better on large scales like 20000+ but fail on 1000 or less
+# line(){ for ((i=0; i<$2; i++)); { printf -- '%s' "$1"; }
+# que(){ printf 0; for ((i=1; i<$1; i++)); { printf -- " %s" $i; }
