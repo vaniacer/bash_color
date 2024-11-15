@@ -7,6 +7,3 @@ Just source this script into one of yours and use it like this:<br>
 <a href="https://t.me/sshtobash"><img src="https://telegram.org/img/website_icon.svg" width="21"></a>
 [![Twitter Follow](https://img.shields.io/twitter/follow/Vaniacer?style=social)](https://twitter.com/Vaniacer)
 [![paypal](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/sshto?locale.x=en_US) <sup>Don't hold yourself, buy me a beer)</sup>
-
-СБПшка на еду<br/>
-![4food](https://github.com/user-attachments/assets/db4500f2-3399-469c-995e-808b87c48f1e)
